@@ -1,85 +1,85 @@
 macOS 默认应用 Deep Link Scheme（应用名称 deeplink_url）整理如下：
 
-Finder	file://
-系统偏好设置	x-apple.systempreferences:
-终端	terminal://
-计算器	calculator://
-邮件	mailto:
-信息	imessage:
-FaceTime	facetime:
-FaceTime 音频	facetime-audio:
-Safari HTTP	x-safari-http:
-Safari HTTPS	x-safari-https:
-Safari 搜索	x-web-search:
-音乐	music://
-播客	podcasts://
-电视	tv://
-地图	maps://
-日历	webcal://
-提醒事项	x-apple-reminder://
-备忘录	notes://
-词典	dict://
-字体册	fontbook://
-微信	xweixin://,weixin://,wechat://
-QQ	tencent://,mqq://,mqqapi://
-钉钉	dingtalk://
-飞书	lark://,feishu://,feishu-open://,x-feishu://
-阿里旺旺	aliim://
-网易云音乐	orpheus://
-腾讯会议	wemeet://,wemeet3://,wwauth3rdca2b0d866939bfde://,wwauth3rd3a82ac41e00d815d://,wwauth3rd4806d2ddf553eb8b://,wwauth3rd3a24940e95296ca3://,wwauth3rdd5968e076e21ca07://
-企业微信	wxwork://
-腾讯文档	txdocs://
-WPS	wps://
-百度网盘	baiduyun://
-迅雷	thunder://
-QQ音乐	qqmusic://,qqmusicmac://
-优酷	youku://
-爱奇艺	iqiyi://
-哔哩哔哩	bilibili://
-腾讯视频	tenvideo://
-金山文档	kdocs://
-石墨文档	shimo://
-语雀	yuque://
-Visual Studio Code	vscode://,code://
-Typora	typora://
-iTerm	iterm2://,gopher://,telnet://,gemini://,titan://,whois://,x-man-page://
-Alfred	alfred://
-Xcode	xcode://,xcdevice://,xcdoc://,apple-reference-documentation://,x-xcode-documentation://,doc://,interface-builder://
-Postman	postman://
-Arc	arcBrowser://
-Binance	binance://
-Clash Verge	clash://,clash-verge://
-Cursor	cursor://
-Discord	discord://
-Docker	docker-desktop://
-Doubao	doubao://
-Gifski	gifski://
-HBuilderX	hbuilderx://
-LarkSuite	lark://,feishu://,feishu-open://,x-lark://
-Microsoft Edge	microsoft-edge://
-Microsoft Excel	launch-excel://,open-excel://,ms-excel://,excel://
-Notion	notion://
-OpenClaw	openclaw://
-OrbStack	orbstack://
-PrettyClean	prettyclean://
-Quark	qklink://,qkclouddrive://,magnet://
-Reqable	com.googleusercontent.apps.716983111520-85qgdtuvltaeinf75o92s12ak3j8udo1://
-Safari	x-safari-https://,prefs://,x-webkit-app-launch://
-ServBay	servbay://
-Telegram Lite	tg://,tonsite://
-Trae CN	trae-cn://
-Typeless	typeless://
-VideoFusion-macOS	vega://,videocut://
-Warp	warp://
-Whisper Transcription	macwhisper://
-Wispr Flow	wispr-flow://
-XMind	xmind://,xmind-zen://
-i4Tools	PCi4Tools://,i4://
-uTools	utools://
-wechatwebdevtools	wechatide://
-wpsoffice	ksoqing://,ksoapp://,ksodoccenter://,ksowpscloudsvr://,ksowps://,ksowpp://,ksoet://,ksopdf://
-元宝	yuanbao://,yuanbao2://
-语雀	yuque://
+- Finder	file://
+- 系统偏好设置	x-apple.systempreferences:
+- 终端	terminal://
+- 计算器	calculator://
+- 邮件	mailto:
+- 信息	imessage:
+- FaceTime	facetime:
+- FaceTime 音频	facetime-audio:
+- Safari HTTP	x-safari-http:
+- Safari HTTPS	x-safari-https:
+- Safari 搜索	x-web-search:
+- 音乐	music://
+- 播客	podcasts://
+- 电视	tv://
+- 地图	maps://
+- 日历	webcal://
+- 提醒事项	x-apple-reminder://
+- 备忘录	notes://
+- 词典	dict://
+- 字体册	fontbook://
+- 微信	xweixin://,weixin://,wechat://
+- QQ	tencent://,mqq://,mqqapi://
+- 钉钉	dingtalk://
+- 飞书	lark://,feishu://,feishu-open://,x-feishu://
+- 阿里旺旺	aliim://
+- 网易云音乐	orpheus://
+- 腾讯会议	wemeet://,wemeet3://,wwauth3rdca2b0d866939bfde://,wwauth3rd3a82ac41e00d815d://,wwauth3rd4806d2ddf553eb8b://,wwauth3rd3a24940e95296ca3://,wwauth3rdd5968e076e21ca07://
+- 企业微信	wxwork://
+- 腾讯文档	txdocs://
+- WPS	wps://
+- 百度网盘	baiduyun://
+- 迅雷	thunder://
+- QQ音乐	qqmusic://,qqmusicmac://
+- 优酷	youku://
+- 爱奇艺	iqiyi://
+- 哔哩哔哩	bilibili://
+- 腾讯视频	tenvideo://
+- 金山文档	kdocs://
+- 石墨文档	shimo://
+- 语雀	yuque://
+- Visual Studio Code	vscode://,code://
+- Typora	typora://
+- iTerm	iterm2://,gopher://,telnet://,gemini://,titan://,whois://,x-man-page://
+- Alfred	alfred://
+- Xcode	xcode://,xcdevice://,xcdoc://,apple-reference-documentation://,x-xcode-documentation://,doc://,interface-builder://
+- Postman	postman://
+- Arc	arcBrowser://
+- Binance	binance://
+- Clash Verge	clash://,clash-verge://
+- Cursor	cursor://
+- Discord	discord://
+- Docker	docker-desktop://
+- Doubao	doubao://
+- Gifski	gifski://
+- HBuilderX	hbuilderx://
+- LarkSuite	lark://,feishu://,feishu-open://,x-lark://
+- Microsoft Edge	microsoft-edge://
+- Microsoft Excel	launch-excel://,open-excel://,ms-excel://,excel://
+- Notion	notion://
+- OpenClaw	openclaw://
+- OrbStack	orbstack://
+- PrettyClean	prettyclean://
+- Quark	qklink://,qkclouddrive://,magnet://
+- Reqable	com.googleusercontent.apps.716983111520-85qgdtuvltaeinf75o92s12ak3j8udo1://
+- Safari	x-safari-https://,prefs://,x-webkit-app-launch://
+- ServBay	servbay://
+- Telegram Lite	tg://,tonsite://
+- Trae CN	trae-cn://
+- Typeless	typeless://
+- VideoFusion-macOS	vega://,videocut://
+- Warp	warp://
+- Whisper Transcription	macwhisper://
+- Wispr Flow	wispr-flow://
+- XMind	xmind://,xmind-zen://
+- i4Tools	PCi4Tools://,i4://
+- uTools	utools://
+- wechatwebdevtools	wechatide://
+- wpsoffice	ksoqing://,ksoapp://,ksodoccenter://,ksowpscloudsvr://,ksowps://,ksowpp://,ksoet://,ksopdf://
+- 元宝	yuanbao://,yuanbao2://
+- 语雀	yuque://
 
 ---
 

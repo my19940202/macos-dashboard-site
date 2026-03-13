@@ -278,10 +278,6 @@
     "name": "Music",
     "iconFile": "com.apple.Music.png",
     "deeplinks": [
-      "daap://",
-      "itms://",
-      "itmss://",
-      "itunes://",
       "music://",
       "musics://",
       "itls://",
@@ -561,10 +557,7 @@
     "name": "Finder",
     "iconFile": "com.apple.finder.png",
     "deeplinks": [
-      "afp://",
-      "smb://",
-      "cifs://",
-      "nwnode://"
+      "file://"
     ],
     "is_system_default": true
   },
@@ -830,12 +823,6 @@
     "name": "iTerm2",
     "iconFile": "com.googlecode.iterm2.png",
     "deeplinks": [
-      "gopher://",
-      "telnet://",
-      "gemini://",
-      "titan://",
-      "whois://",
-      "x-man-page://",
       "iterm2://"
     ],
     "is_system_default": false

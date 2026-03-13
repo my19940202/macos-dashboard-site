@@ -4,6 +4,11 @@ import "./globals.css";
 import ThemeScript from "@/components/ThemeScript";
 import Navbar from "@/components/Navbar";
 
+const siteUrl =
+  process.env.SITE_URL ||
+  process.env.NEXT_PUBLIC_SITE_URL ||
+  "http://localhost:3000";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -17,6 +22,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Mac 应用启动台",
   description: "在 Web 中以 macOS 风格展示并启动你的常用应用。",
+  metadataBase: new URL(siteUrl),
 };
 
 export default function RootLayout({
