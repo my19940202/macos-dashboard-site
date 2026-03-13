@@ -7,3 +7,44 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
+
+.launchpad-swipe-surface {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.launchpad-swipe-surface img {
+  -webkit-user-drag: none;
+}
+
+.launchpad-page-enter-left {
+  animation: launchpad-slide-in-left 220ms ease-out;
+}
+
+.launchpad-page-enter-right {
+  animation: launchpad-slide-in-right 220ms ease-out;
+}
+
+@keyframes launchpad-slide-in-left {
+  from {
+    opacity: 0;
+    transform: translate3d(48px, 0, 0) scale(0.985);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+@keyframes launchpad-slide-in-right {
+  from {
+    opacity: 0;
+    transform: translate3d(-48px, 0, 0) scale(0.985);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}

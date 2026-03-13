@@ -67,8 +67,6 @@
     "name": "App Store",
     "iconFile": "com.apple.AppStore.png",
     "deeplinks": [
-      "itms-apps://",
-      "itms-appss://",
       "macappstore://",
       "macappstores://"
     ],
@@ -432,14 +430,6 @@
     "is_system_default": true
   },
   {
-    "name": "Spotlight",
-    "iconFile": "com.apple.Spotlight.png",
-    "deeplinks": [
-      "spotlight://"
-    ],
-    "is_system_default": true
-  },
-  {
     "name": "Stickies",
     "iconFile": "com.apple.Stickies.png",
     "deeplinks": [],
@@ -639,8 +629,7 @@
     "name": "Mail",
     "iconFile": "com.apple.mail.png",
     "deeplinks": [
-      "message://",
-      "mail-pref-pane://"
+      "message://"
     ],
     "is_system_default": true
   },

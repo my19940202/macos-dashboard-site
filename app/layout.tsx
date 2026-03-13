@@ -36,7 +36,6 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-base-300 text-base-content`}
       >
         <ThemeScript />
-        <Navbar />
         {children}
       </body>
     </html>

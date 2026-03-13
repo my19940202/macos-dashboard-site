@@ -26,7 +26,7 @@ function getApps(): AppItem[] {
     .map((item) => ({
       name: item.name,
       deeplinks: item.deeplinks,
-      iconUrl: `/api/icon?file=${encodeURIComponent(item.iconFile)}`,
+      iconUrl: `https://eztwwgfhrwnlyfhzqyxe.supabase.co/storage/v1/object/public/mac-dashboard/images/${item.iconFile}`,
     }));
 }
 
