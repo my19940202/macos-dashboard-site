@@ -2,762 +2,1181 @@
   {
     "name": "ServBay",
     "iconFile": "Dev.ServBay.macOS.ServBay.png",
-    "deeplinks": ["servbay://"]
+    "deeplinks": [
+      "servbay://"
+    ],
+    "is_system_default": false
   },
   {
     "name": "OpenClaw",
     "iconFile": "bot.molt.mac.png",
-    "deeplinks": ["openclaw://"]
+    "deeplinks": [
+      "openclaw://"
+    ],
+    "is_system_default": false
   },
   {
     "name": "PrettyClean",
     "iconFile": "cc.prettyclean.PrettyClean.png",
-    "deeplinks": ["prettyclean://"]
+    "deeplinks": [
+      "prettyclean://"
+    ],
+    "is_system_default": false
   },
   {
     "name": "i4Tools",
     "iconFile": "cn.i4tools.mac.png",
-    "deeplinks": ["PCi4Tools://", "i4://"]
+    "deeplinks": [
+      "PCi4Tools://",
+      "i4://"
+    ],
+    "is_system_default": false
   },
   {
     "name": "Trae CN",
     "iconFile": "cn.trae.app.png",
-    "deeplinks": ["trae-cn://"]
+    "deeplinks": [
+      "trae-cn://"
+    ],
+    "is_system_default": false
   },
   {
     "name": "AVB Configuration",
     "iconFile": "com.apple.AVB-Audio-Configuration.png",
-    "deeplinks": ["com.apple.avb.configuration://"]
+    "deeplinks": [
+      "com.apple.avb.configuration://"
+    ],
+    "is_system_default": true
   },
   {
     "name": "Accessibility",
     "iconFile": "com.apple.AccessibilityUIServer.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": true
   },
   {
     "name": "Contacts",
     "iconFile": "com.apple.AddressBook.png",
-    "deeplinks": ["addressbook://", "contacts-sensitive://"]
+    "deeplinks": [
+      "addressbook://",
+      "contacts-sensitive://"
+    ],
+    "is_system_default": true
   },
   {
     "name": "App Store",
     "iconFile": "com.apple.AppStore.png",
-    "deeplinks": ["itms-apps://", "itms-appss://", "macappstore://", "macappstores://"]
+    "deeplinks": [
+      "itms-apps://",
+      "itms-appss://",
+      "macappstore://",
+      "macappstores://"
+    ],
+    "is_system_default": true
   },
   {
     "name": "AppleScript Utility",
     "iconFile": "com.apple.AppleScriptUtility.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": true
   },
   {
     "name": "Automator Application Stub",
     "iconFile": "com.apple.Automator.Automator-Application-Stub.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": true
   },
   {
     "name": "Automator",
     "iconFile": "com.apple.Automator.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": true
   },
   {
     "name": "Automator Installer",
     "iconFile": "com.apple.AutomatorInstaller.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": true
   },
   {
     "name": "Batteries",
     "iconFile": "com.apple.Batteries.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": true
   },
   {
     "name": "BluetoothSetupAssistant",
     "iconFile": "com.apple.BluetoothSetupAssistant.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": true
   },
   {
     "name": "BluetoothUIServer",
     "iconFile": "com.apple.BluetoothUIServer.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": true
   },
   {
     "name": "Certificate Assistant",
     "iconFile": "com.apple.CertificateAssistant.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": true
   },
   {
     "name": "Chess",
     "iconFile": "com.apple.Chess.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": true
   },
   {
     "name": "Apple Diagnostics",
     "iconFile": "com.apple.DiagnosticsModeAssistant.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": true
   },
   {
     "name": "Diagnostics Reporter",
     "iconFile": "com.apple.DiagnosticsReporter.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": true
   },
   {
     "name": "Dictionary",
     "iconFile": "com.apple.Dictionary.png",
-    "deeplinks": ["x-dictionary://", "dict://"]
+    "deeplinks": [
+      "x-dictionary://",
+      "dict://"
+    ],
+    "is_system_default": true
   },
   {
     "name": "Enhanced Logging",
     "iconFile": "com.apple.EnhancedLogging.png",
-    "deeplinks": ["diags://", "diagnostics://"]
+    "deeplinks": [
+      "diags://",
+      "diagnostics://"
+    ],
+    "is_system_default": true
   },
   {
     "name": "Erase Assistant",
     "iconFile": "com.apple.EraseAssistant.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": true
   },
   {
     "name": "FaceTime",
     "iconFile": "com.apple.FaceTime.png",
-    "deeplinks": ["facetime-group://", "facetime-open-link://", "system-call-controls://"]
+    "deeplinks": [
+      "facetime-group://",
+      "facetime-open-link://",
+      "system-call-controls://"
+    ],
+    "is_system_default": true
   },
   {
     "name": "FileProvider-Feedback",
     "iconFile": "com.apple.FileProvider-Feedback.png",
-    "deeplinks": ["fileprovider-feedback://"]
+    "deeplinks": [
+      "fileprovider-feedback://"
+    ],
+    "is_system_default": true
   },
   {
     "name": "FolderActionsDispatcher",
     "iconFile": "com.apple.FolderActionsDispatcher.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": true
   },
   {
     "name": "Font Book",
     "iconFile": "com.apple.FontBook.png",
-    "deeplinks": ["fontbook://"]
+    "deeplinks": [
+      "fontbook://"
+    ],
+    "is_system_default": true
   },
   {
     "name": "GameTrampoline",
     "iconFile": "com.apple.GameTrampoline.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": true
   },
   {
     "name": "Image Playground",
     "iconFile": "com.apple.GenerativePlaygroundApp.png",
-    "deeplinks": ["imageplayground.open://"]
+    "deeplinks": [
+      "imageplayground.open://"
+    ],
+    "is_system_default": true
   },
   {
     "name": "Home",
     "iconFile": "com.apple.Home.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": true
   },
   {
     "name": "Image Capture",
     "iconFile": "com.apple.Image_Capture.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": true
   },
   {
     "name": "JavaLauncher",
     "iconFile": "com.apple.JavaLauncher.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": true
   },
   {
     "name": "Keyboard Setup Assistant",
     "iconFile": "com.apple.KeyboardSetupAssistant.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": true
   },
   {
     "name": "ManagedClient",
     "iconFile": "com.apple.ManagedClient.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": true
   },
   {
     "name": "Maps",
     "iconFile": "com.apple.Maps.png",
-    "deeplinks": ["x-maps-ac-auth://", "maps://", "mapitem://", "map://", "x-maps-mapitemhandles://", "x-maps-bulletin://", "x-maps-punchinhint://"]
+    "deeplinks": [
+      "x-maps-ac-auth://",
+      "maps://",
+      "mapitem://",
+      "map://",
+      "x-maps-mapitemhandles://",
+      "x-maps-bulletin://",
+      "x-maps-punchinhint://"
+    ],
+    "is_system_default": true
   },
   {
     "name": "Medical Imaging Calibrator",
     "iconFile": "com.apple.MedicalImagingCalibrator.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": true
   },
   {
     "name": "Messages",
     "iconFile": "com.apple.MobileSMS.png",
-    "deeplinks": ["sms-private://", "itms-messages://", "itms-messagess://", "imessage://", "iChat://", "Messages://", "im://"]
+    "deeplinks": [
+      "sms-private://",
+      "itms-messages://",
+      "itms-messagess://",
+      "imessage://",
+      "iChat://",
+      "Messages://",
+      "im://"
+    ],
+    "is_system_default": true
   },
   {
     "name": "Music",
     "iconFile": "com.apple.Music.png",
-    "deeplinks": ["daap://", "itms://", "itmss://", "itunes://", "music://", "musics://", "itls://", "itlss://", "itals://", "italss://", "itunesradio://", "itsradio://"]
+    "deeplinks": [
+      "daap://",
+      "itms://",
+      "itmss://",
+      "itunes://",
+      "music://",
+      "musics://",
+      "itls://",
+      "itlss://",
+      "itals://",
+      "italss://",
+      "itunesradio://",
+      "itsradio://"
+    ],
+    "is_system_default": true
   },
   {
     "name": "NetAuthAgent",
     "iconFile": "com.apple.NetAuthAgent.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": true
   },
   {
     "name": "Notes",
     "iconFile": "com.apple.Notes.png",
-    "deeplinks": ["notes://", "applenotes://"]
+    "deeplinks": [
+      "notes://",
+      "applenotes://"
+    ],
+    "is_system_default": true
   },
   {
     "name": "Rosetta 2 Updater",
     "iconFile": "com.apple.OAHSoftwareUpdateApp.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": true
   },
   {
     "name": "OBEXAgent",
     "iconFile": "com.apple.OBEXAgent.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": true
   },
   {
     "name": "ODSAgent",
     "iconFile": "com.apple.ODSAgent.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": true
   },
   {
     "name": "Install in Progress",
     "iconFile": "com.apple.PackageUIKit.Install-in-Progress.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": true
   },
   {
     "name": "Paired Devices",
     "iconFile": "com.apple.PairedDevices.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": true
   },
   {
     "name": "Pass Viewer",
     "iconFile": "com.apple.Pass-Viewer.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": true
   },
   {
     "name": "Passwords",
     "iconFile": "com.apple.Passwords.png",
-    "deeplinks": ["otpauth://", "apple-otpauth://", "otpauth-migration://", "apple-otpauth-migration://"]
+    "deeplinks": [
+      "otpauth://",
+      "apple-otpauth://",
+      "otpauth-migration://",
+      "apple-otpauth-migration://"
+    ],
+    "is_system_default": true
   },
   {
     "name": "PeopleViewService",
     "iconFile": "com.apple.PeopleViewService.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": true
   },
   {
     "name": "Photos",
     "iconFile": "com.apple.Photos.png",
-    "deeplinks": ["photos://", "photos-navigation://", "cloudphoto://"]
+    "deeplinks": [
+      "photos://",
+      "photos-navigation://",
+      "cloudphoto://"
+    ],
+    "is_system_default": true
   },
   {
     "name": "Preview",
     "iconFile": "com.apple.Preview.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": true
   },
   {
     "name": "Problem Reporter",
     "iconFile": "com.apple.ProblemReporter.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": true
   },
   {
     "name": "QuickTime Player",
     "iconFile": "com.apple.QuickTimePlayerX.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": true
   },
   {
     "name": "Safari",
     "iconFile": "com.apple.Safari.png",
-    "deeplinks": ["x-safari-https://", "prefs://", "x-webkit-app-launch://"]
+    "deeplinks": [
+      "x-safari-https://",
+      "prefs://",
+      "x-webkit-app-launch://"
+    ],
+    "is_system_default": true
   },
   {
     "name": "iPhone Mirroring",
     "iconFile": "com.apple.ScreenContinuity.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": true
   },
   {
     "name": "ScreenSaverEngine",
     "iconFile": "com.apple.ScreenSaver.Engine.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": true
   },
   {
     "name": "Screen Time",
     "iconFile": "com.apple.ScreenTimeWidgetApplication.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": true
   },
   {
     "name": "Script Menu",
     "iconFile": "com.apple.ScriptMenuApp.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": true
   },
   {
     "name": "Setup Assistant",
     "iconFile": "com.apple.SetupAssistant.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": true
   },
   {
     "name": "Siri",
     "iconFile": "com.apple.Siri.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": true
   },
   {
     "name": "Spotlight",
     "iconFile": "com.apple.Spotlight.png",
-    "deeplinks": ["spotlight://"]
+    "deeplinks": [
+      "spotlight://"
+    ],
+    "is_system_default": true
   },
   {
     "name": "Stickies",
     "iconFile": "com.apple.Stickies.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": true
   },
   {
     "name": "TV",
     "iconFile": "com.apple.TV.png",
-    "deeplinks": ["daap://", "com.apple.tv://", "videos://", "com.apple.watchlist://", "itls://", "itlss://", "itvls://", "itvlss://"]
+    "deeplinks": [
+      "daap://",
+      "com.apple.tv://",
+      "videos://",
+      "com.apple.watchlist://",
+      "itls://",
+      "itlss://",
+      "itvls://",
+      "itvlss://"
+    ],
+    "is_system_default": true
   },
   {
     "name": "TextEdit",
     "iconFile": "com.apple.TextEdit.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": true
   },
   {
     "name": "VoiceMemos",
     "iconFile": "com.apple.VoiceMemos.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": true
   },
   {
     "name": "VoiceOver",
     "iconFile": "com.apple.VoiceOver.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": true
   },
   {
     "name": "Accessibility Reader",
     "iconFile": "com.apple.accessibility.AccessibilityReader.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": true
   },
   {
     "name": "Apps",
     "iconFile": "com.apple.apps.launcher.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": true
   },
   {
     "name": "Time Machine",
     "iconFile": "com.apple.backup.launcher.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": true
   },
   {
     "name": "Calculator",
     "iconFile": "com.apple.calculator.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": true
   },
   {
     "name": "Clock",
     "iconFile": "com.apple.clock.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": true
   },
   {
     "name": "ControlCenter",
     "iconFile": "com.apple.controlcenter.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": true
   },
   {
     "name": "Pro Display Calibrator",
     "iconFile": "com.apple.displaycalibrator.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": true
   },
   {
     "name": "Dock",
     "iconFile": "com.apple.dock.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": true
   },
   {
     "name": "Install Command Line Developer Tools",
     "iconFile": "com.apple.dt.CommandLineTools.installondemand.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": true
   },
   {
     "name": "Xcode",
     "iconFile": "com.apple.dt.Xcode.png",
-    "deeplinks": ["xcode://", "xcdevice://", "xcdoc://", "apple-reference-documentation://", "x-xcode-documentation://", "doc://", "x-xcode-documentation://", "interface-builder://"]
+    "deeplinks": [
+      "xcode://",
+      "xcdevice://",
+      "xcdoc://",
+      "apple-reference-documentation://",
+      "x-xcode-documentation://",
+      "doc://",
+      "x-xcode-documentation://",
+      "interface-builder://"
+    ],
+    "is_system_default": true
   },
   {
     "name": "Mission Control",
     "iconFile": "com.apple.exposelauncher.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": true
   },
   {
     "name": "Finder",
     "iconFile": "com.apple.finder.png",
-    "deeplinks": ["afp://", "smb://", "cifs://", "nwnode://"]
+    "deeplinks": [
+      "afp://",
+      "smb://",
+      "cifs://",
+      "nwnode://"
+    ],
+    "is_system_default": true
   },
   {
     "name": "FindMy",
     "iconFile": "com.apple.findmy.png",
-    "deeplinks": ["grenada://", "findmyfriends://", "fmf1://", "findmy://", "fmip1://"]
+    "deeplinks": [
+      "grenada://",
+      "findmyfriends://",
+      "fmf1://",
+      "findmy://",
+      "fmip1://"
+    ],
+    "is_system_default": true
   },
   {
     "name": "Freeform",
     "iconFile": "com.apple.freeform.png",
-    "deeplinks": ["freeform://"]
+    "deeplinks": [
+      "freeform://"
+    ],
+    "is_system_default": true
   },
   {
     "name": "Game Center",
     "iconFile": "com.apple.gamecenter.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": true
   },
   {
     "name": "Games",
     "iconFile": "com.apple.games.png",
-    "deeplinks": ["games://", "game-overlay-ui://"]
+    "deeplinks": [
+      "games://",
+      "game-overlay-ui://"
+    ],
+    "is_system_default": true
   },
   {
     "name": "Tips",
     "iconFile": "com.apple.helpviewer.png",
-    "deeplinks": ["help://", "x-apple-tips://"]
+    "deeplinks": [
+      "help://",
+      "x-apple-tips://"
+    ],
+    "is_system_default": true
   },
   {
     "name": "Books",
     "iconFile": "com.apple.iBooksX.png",
-    "deeplinks": ["itms-books://", "itms-bookss://", "ibooks://"]
+    "deeplinks": [
+      "itms-books://",
+      "itms-bookss://",
+      "ibooks://"
+    ],
+    "is_system_default": true
   },
   {
     "name": "iCloud+",
     "iconFile": "com.apple.icq.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": true
   },
   {
     "name": "Installer",
     "iconFile": "com.apple.installer.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": true
   },
   {
     "name": "Journal",
     "iconFile": "com.apple.journal.png",
-    "deeplinks": ["moments://"]
+    "deeplinks": [
+      "moments://"
+    ],
+    "is_system_default": true
   },
   {
     "name": "Mail",
     "iconFile": "com.apple.mail.png",
-    "deeplinks": ["message://", "mail-pref-pane://"]
+    "deeplinks": [
+      "message://",
+      "mail-pref-pane://"
+    ],
+    "is_system_default": true
   },
   {
     "name": "Phone",
     "iconFile": "com.apple.mobilephone.png",
-    "deeplinks": ["telephony://", "tel-phoneapp://", "phoneapp://", "vmshow://"]
+    "deeplinks": [
+      "telephony://",
+      "tel-phoneapp://",
+      "phoneapp://",
+      "vmshow://"
+    ],
+    "is_system_default": true
   },
   {
     "name": "MusicRecognitionMac",
     "iconFile": "com.apple.musicrecognition.mac.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": true
   },
   {
     "name": "News",
     "iconFile": "com.apple.news.png",
-    "deeplinks": ["applenews://", "applenewss://"]
+    "deeplinks": [
+      "applenews://",
+      "applenewss://"
+    ],
+    "is_system_default": true
   },
   {
     "name": "Podcasts",
     "iconFile": "com.apple.podcasts.png",
-    "deeplinks": ["podcast://", "pcast://", "itms-podcasts://", "podcasts://"]
+    "deeplinks": [
+      "podcast://",
+      "pcast://",
+      "itms-podcasts://",
+      "podcasts://"
+    ],
+    "is_system_default": true
   },
   {
     "name": "Add Printer",
     "iconFile": "com.apple.print.add.png",
-    "deeplinks": ["ipps://", "ipp://"]
+    "deeplinks": [
+      "ipps://",
+      "ipp://"
+    ],
+    "is_system_default": true
   },
   {
     "name": "Reminders",
     "iconFile": "com.apple.reminders.png",
-    "deeplinks": ["x-apple-reminderkit://"]
+    "deeplinks": [
+      "x-apple-reminderkit://"
+    ],
+    "is_system_default": true
   },
   {
     "name": "Shortcuts",
     "iconFile": "com.apple.shortcuts.png",
-    "deeplinks": ["shortcuts-production://", "shortcuts://", "workflow://"]
+    "deeplinks": [
+      "shortcuts-production://",
+      "shortcuts://",
+      "workflow://"
+    ],
+    "is_system_default": true
   },
   {
     "name": "Siri",
     "iconFile": "com.apple.siri.launcher.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": true
   },
   {
     "name": "Stocks",
     "iconFile": "com.apple.stocks.png",
-    "deeplinks": ["stocks://"]
+    "deeplinks": [
+      "stocks://"
+    ],
+    "is_system_default": true
   },
   {
     "name": "System Settings",
     "iconFile": "com.apple.systempreferences.png",
-    "deeplinks": ["x-apple.systempreferences://"]
+    "deeplinks": [
+      "x-apple.systempreferences://"
+    ],
+    "is_system_default": true
   },
   {
     "name": "TipsSpotlightHandler",
     "iconFile": "com.apple.tips.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": true
   },
   {
     "name": "UniversalControl",
     "iconFile": "com.apple.universalcontrol.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": true
   },
   {
     "name": "Weather",
     "iconFile": "com.apple.weather.png",
-    "deeplinks": ["weather://"]
+    "deeplinks": [
+      "weather://"
+    ],
+    "is_system_default": true
   },
   {
     "name": "WidgetKit Simulator",
     "iconFile": "com.apple.widgetkit.simulator.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": true
   },
   {
     "name": "Binance",
     "iconFile": "com.binance.BinanceDesktop.png",
-    "deeplinks": ["binance://"]
+    "deeplinks": [
+      "binance://"
+    ],
+    "is_system_default": false
   },
   {
     "name": "Doubao",
     "iconFile": "com.bot.pc.doubao.png",
-    "deeplinks": ["doubao://"]
+    "deeplinks": [
+      "doubao://"
+    ],
+    "is_system_default": false
   },
   {
     "name": "Macs Fan Control",
     "iconFile": "com.crystalidea.macsfancontrol.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": false
   },
   {
     "name": "Docker",
     "iconFile": "com.docker.docker.png",
-    "deeplinks": ["docker-desktop://"]
+    "deeplinks": [
+      "docker-desktop://"
+    ],
+    "is_system_default": false
   },
   {
     "name": "Lark",
     "iconFile": "com.electron.lark.png",
-    "deeplinks": ["lark://", "feishu://", "feishu-open://", "x-feishu://"]
+    "deeplinks": [
+      "lark://",
+      "feishu://",
+      "feishu-open://",
+      "x-feishu://"
+    ],
+    "is_system_default": false
   },
   {
     "name": "Wispr Flow",
     "iconFile": "com.electron.wispr-flow.png",
-    "deeplinks": ["wispr-flow://"]
+    "deeplinks": [
+      "wispr-flow://"
+    ],
+    "is_system_default": false
   },
   {
     "name": "Whisper Transcription",
     "iconFile": "com.goodsnooze.MacWhisper.png",
-    "deeplinks": ["macwhisper://"]
+    "deeplinks": [
+      "macwhisper://"
+    ],
+    "is_system_default": false
   },
   {
     "name": "Google Chrome",
     "iconFile": "com.google.Chrome.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": false
   },
   {
     "name": "iTerm2",
     "iconFile": "com.googlecode.iterm2.png",
-    "deeplinks": ["gopher://", "telnet://", "gemini://", "titan://", "whois://", "x-man-page://", "iterm2://"]
+    "deeplinks": [
+      "gopher://",
+      "telnet://",
+      "gemini://",
+      "titan://",
+      "whois://",
+      "x-man-page://",
+      "iterm2://"
+    ],
+    "is_system_default": false
   },
   {
     "name": "Discord",
     "iconFile": "com.hnc.Discord.png",
-    "deeplinks": ["discord://"]
+    "deeplinks": [
+      "discord://"
+    ],
+    "is_system_default": false
   },
   {
     "name": "LaunchPal",
     "iconFile": "com.iboysoft.LaunchPal.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": false
   },
   {
     "name": "wpsoffice",
     "iconFile": "com.kingsoft.wpsoffice.mac.png",
-    "deeplinks": ["ksoqing://", "ksoapp://", "ksodoccenter://", "ksowpscloudsvr://", "ksowps://", "ksowpp://", "ksoet://", "ksopdf://"]
+    "deeplinks": [
+      "ksoqing://",
+      "ksoapp://",
+      "ksodoccenter://",
+      "ksowpscloudsvr://",
+      "ksowps://",
+      "ksowpp://",
+      "ksoet://",
+      "ksopdf://"
+    ],
+    "is_system_default": false
   },
   {
     "name": "LarkSuite",
     "iconFile": "com.larksuite.larkApp.png",
-    "deeplinks": ["lark://", "feishu://", "feishu-open://", "x-lark://"]
+    "deeplinks": [
+      "lark://",
+      "feishu://",
+      "feishu-open://",
+      "x-lark://"
+    ],
+    "is_system_default": false
   },
   {
     "name": "VideoFusion-macOS",
     "iconFile": "com.lemon.lvpro.png",
-    "deeplinks": ["vega://", "videocut://"]
+    "deeplinks": [
+      "vega://",
+      "videocut://"
+    ],
+    "is_system_default": false
   },
   {
     "name": "WebPomodoro",
     "iconFile": "com.macpomodoro.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": false
   },
   {
     "name": "Microsoft Excel",
     "iconFile": "com.microsoft.Excel.png",
-    "deeplinks": ["launch-excel://", "open-excel://", "ms-excel://", "excel://"]
+    "deeplinks": [
+      "launch-excel://",
+      "open-excel://",
+      "ms-excel://",
+      "excel://"
+    ],
+    "is_system_default": false
   },
   {
     "name": "Code",
     "iconFile": "com.microsoft.VSCode.png",
-    "deeplinks": ["vscode://"]
+    "deeplinks": [
+      "vscode://"
+    ],
+    "is_system_default": false
   },
   {
     "name": "Microsoft Edge",
     "iconFile": "com.microsoft.edgemac.png",
-    "deeplinks": ["microsoft-edge://"]
+    "deeplinks": [
+      "microsoft-edge://"
+    ],
+    "is_system_default": false
   },
   {
     "name": "MongoDB Compass",
     "iconFile": "com.mongodb.compass.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": false
   },
   {
     "name": "SunloginClient",
     "iconFile": "com.oray.sunlogin.macclient.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": false
   },
   {
     "name": "Postman",
     "iconFile": "com.postmanlabs.mac.png",
-    "deeplinks": ["postman://"]
+    "deeplinks": [
+      "postman://"
+    ],
+    "is_system_default": false
   },
   {
     "name": "Navicat Premium",
     "iconFile": "com.prect.NavicatPremium12.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": false
   },
   {
     "name": "Quark",
     "iconFile": "com.quark.desktop.png",
-    "deeplinks": ["qklink://", "qkclouddrive://", "magnet://"]
+    "deeplinks": [
+      "qklink://",
+      "qkclouddrive://",
+      "magnet://"
+    ],
+    "is_system_default": false
   },
   {
     "name": "Reqable",
     "iconFile": "com.reqable.macosx.png",
-    "deeplinks": ["com.googleusercontent.apps.716983111520-85qgdtuvltaeinf75o92s12ak3j8udo1://"]
+    "deeplinks": [
+      "com.googleusercontent.apps.716983111520-85qgdtuvltaeinf75o92s12ak3j8udo1://"
+    ],
+    "is_system_default": false
   },
   {
     "name": "Gifski",
     "iconFile": "com.sindresorhus.Gifski.png",
-    "deeplinks": ["gifski://"]
+    "deeplinks": [
+      "gifski://"
+    ],
+    "is_system_default": false
   },
   {
     "name": "Sublime Text",
     "iconFile": "com.sublimetext.4.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": false
   },
   {
     "name": "QQMusic",
     "iconFile": "com.tencent.QQMusicMac.png",
-    "deeplinks": ["qqmusicmac://"]
+    "deeplinks": [
+      "qqmusicmac://"
+    ],
+    "is_system_default": false
   },
   {
     "name": "TencentMeeting",
     "iconFile": "com.tencent.meeting.png",
-    "deeplinks": ["wemeet3://", "wemeet://", "wwauth3rdca2b0d866939bfde://", "wwauth3rd3a82ac41e00d815d://", "wwauth3rd4806d2ddf553eb8b://", "wwauth3rd3a24940e95296ca3://", "wwauth3rdd5968e076e21ca07://"]
+    "deeplinks": [
+      "wemeet3://",
+      "wemeet://",
+      "wwauth3rdca2b0d866939bfde://",
+      "wwauth3rd3a82ac41e00d815d://",
+      "wwauth3rd4806d2ddf553eb8b://",
+      "wwauth3rd3a24940e95296ca3://",
+      "wwauth3rdd5968e076e21ca07://"
+    ],
+    "is_system_default": false
   },
   {
     "name": "QQ",
     "iconFile": "com.tencent.qq.png",
-    "deeplinks": ["tencent://", "mqqapi://"]
+    "deeplinks": [
+      "tencent://",
+      "mqqapi://"
+    ],
+    "is_system_default": false
   },
   {
     "name": "wechatwebdevtools",
     "iconFile": "com.tencent.webplusdevtools.png",
-    "deeplinks": ["wechatide://"]
+    "deeplinks": [
+      "wechatide://"
+    ],
+    "is_system_default": false
   },
   {
     "name": "WeChat",
     "iconFile": "com.tencent.xinWeChat.png",
-    "deeplinks": ["xweixin://", "weixin://", "wechat://"]
+    "deeplinks": [
+      "xweixin://",
+      "weixin://",
+      "wechat://"
+    ],
+    "is_system_default": false
   },
   {
     "name": "元宝",
     "iconFile": "com.tencent.yuanbao.png",
-    "deeplinks": ["yuanbao://", "yuanbao2://"]
+    "deeplinks": [
+      "yuanbao://",
+      "yuanbao2://"
+    ],
+    "is_system_default": false
   },
   {
     "name": "Cursor",
     "iconFile": "com.todesktop.230313mzl4w4u92.png",
-    "deeplinks": ["cursor://"]
+    "deeplinks": [
+      "cursor://"
+    ],
+    "is_system_default": false
   },
   {
     "name": "ComfyUI",
     "iconFile": "com.todesktop.241012ess7yxs0e.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": false
   },
   {
     "name": "Charles",
     "iconFile": "com.xk72.Charles.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": false
   },
   {
     "name": "影刀",
     "iconFile": "com.yingdao.yd.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": false
   },
   {
     "name": "语雀",
     "iconFile": "com.yuque.app.png",
-    "deeplinks": ["yuque://"]
+    "deeplinks": [
+      "yuque://"
+    ],
+    "is_system_default": false
   },
   {
     "name": "Arc",
     "iconFile": "company.thebrowser.Browser.png",
-    "deeplinks": ["arcBrowser://"]
+    "deeplinks": [
+      "arcBrowser://"
+    ],
+    "is_system_default": false
   },
   {
     "name": "The Unarchiver",
     "iconFile": "cx.c3.theunarchiver.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": false
   },
   {
     "name": "FinderPath",
     "iconFile": "de.bahoom.FinderPath.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": false
   },
   {
     "name": "OrbStack",
     "iconFile": "dev.kdrag0n.MacVirt.png",
-    "deeplinks": ["orbstack://"]
+    "deeplinks": [
+      "orbstack://"
+    ],
+    "is_system_default": false
   },
   {
     "name": "Warp",
     "iconFile": "dev.warp.Warp-Stable.png",
-    "deeplinks": ["warp://"]
+    "deeplinks": [
+      "warp://"
+    ],
+    "is_system_default": false
   },
   {
     "name": "Stats",
     "iconFile": "eu.exelban.Stats.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": false
   },
   {
     "name": "HBuilderX",
     "iconFile": "io.dcloud.HBuilderX.png",
-    "deeplinks": ["hbuilderx://"]
+    "deeplinks": [
+      "hbuilderx://"
+    ],
+    "is_system_default": false
   },
   {
     "name": "Clash Verge",
     "iconFile": "io.github.clash-verge-rev.clash-verge-rev.png",
-    "deeplinks": ["clash://", "clash-verge://"]
+    "deeplinks": [
+      "clash://",
+      "clash-verge://"
+    ],
+    "is_system_default": false
   },
   {
     "name": "XMind",
     "iconFile": "net.xmind.vana.app.png",
-    "deeplinks": ["xmind://", "xmind-zen://"]
+    "deeplinks": [
+      "xmind://",
+      "xmind-zen://"
+    ],
+    "is_system_default": false
   },
   {
     "name": "Notion",
     "iconFile": "notion.id.png",
-    "deeplinks": ["notion://"]
+    "deeplinks": [
+      "notion://"
+    ],
+    "is_system_default": false
   },
   {
     "name": "Typeless",
     "iconFile": "now.typeless.desktop.png",
-    "deeplinks": ["typeless://"]
+    "deeplinks": [
+      "typeless://"
+    ],
+    "is_system_default": false
   },
   {
     "name": "Telegram Lite",
     "iconFile": "org.telegram.desktop.png",
-    "deeplinks": ["tg://", "tonsite://"]
+    "deeplinks": [
+      "tg://",
+      "tonsite://"
+    ],
+    "is_system_default": false
   },
   {
     "name": "uTools",
     "iconFile": "org.yuanli.utools.png",
-    "deeplinks": ["utools://"]
+    "deeplinks": [
+      "utools://"
+    ],
+    "is_system_default": false
   },
   {
     "name": "蚁小二4.0",
     "iconFile": "yixiaoer-lite.png",
-    "deeplinks": []
+    "deeplinks": [],
+    "is_system_default": false
   }
 ]
-
