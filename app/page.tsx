@@ -1,5 +1,6 @@
 import LaunchPad from "../components/LaunchPad";
 import appsData from "../data/apps.json";
+import PwaInstallButton from "@/components/PwaInstallButton";
 
 export type AppItem = {
   name: string;
@@ -35,6 +36,7 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-base-200">
+      <PwaInstallButton />
       <LaunchPad apps={apps} />
     </main>
   );

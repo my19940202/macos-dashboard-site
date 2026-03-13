@@ -7,5 +7,7 @@ node_modules
 .env*.local
 .env.production
 .env.production.local
-shell/app-icons/*
-shell/app-icons/*
+shell/app-icons
+shell/app-icons-png
+shell/icon-size-picks
+shell/app.csv

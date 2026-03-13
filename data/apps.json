@@ -166,7 +166,6 @@
     "name": "FaceTime",
     "iconFile": "com.apple.FaceTime.png",
     "deeplinks": [
-      "facetime-group://",
       "facetime-open-link://",
       "system-call-controls://"
     ],
@@ -412,6 +411,14 @@
     "is_system_default": true
   },
   {
+    "name": "Calendar",
+    "iconFile": "com.apple.Calendar.png",
+    "deeplinks": [
+      "webcal:"
+    ],
+    "is_system_default": true
+  },
+  {
     "name": "Script Menu",
     "iconFile": "com.apple.ScriptMenuApp.png",
     "deeplinks": [],
@@ -544,14 +551,6 @@
     "is_system_default": true
   },
   {
-    "name": "Finder",
-    "iconFile": "com.apple.finder.png",
-    "deeplinks": [
-      "file://"
-    ],
-    "is_system_default": true
-  },
-  {
     "name": "FindMy",
     "iconFile": "com.apple.findmy.png",
     "deeplinks": [
@@ -629,7 +628,7 @@
     "name": "Mail",
     "iconFile": "com.apple.mail.png",
     "deeplinks": [
-      "message://"
+      "mailto://"
     ],
     "is_system_default": true
   },
