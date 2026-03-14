@@ -14,7 +14,7 @@ export default function HomePage({ locale }: HomePageProps) {
   return (
     <main className="min-h-screen bg-base-200">
       <PwaInstallButton messages={messages.pwaInstall} />
-      <LaunchPad apps={apps} messages={messages.launchPad} />
+      <LaunchPad apps={apps} messages={messages.launchPad} locale={locale} />
     </main>
   );
 }

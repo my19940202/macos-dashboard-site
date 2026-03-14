@@ -1,10 +1,26 @@
+import type { Metadata } from "next";
+import LaunchOsBlogArticle, {
+  getLaunchOsBlogCopy,
+} from "@/components/LaunchOsBlogArticle";
+import {
+  defaultLocale,
+  getAlternateLanguagePaths,
+  getLocalizedPath,
+} from "@/lib/i18n";
 
-export default function VocabPage() {
-  return (
-    <main className="mx-auto max-w-6xl px-4 py-8">
-      <p className="mb-4 text-sm opacity-60">
-        从 Thinking 语料中提取的高频单词与短语统计，基于 n-gram 分词 + 停用词过滤。
-      </p>
-    </main>
-  );
+export function generateMetadata(): Metadata {
+  const copy = getLaunchOsBlogCopy(defaultLocale);
+
+  return {
+    title: copy.metadataTitle,
+    description: copy.metadataDescription,
+    alternates: {
+      canonical: getLocalizedPath(defaultLocale, "/blog"),
+      languages: getAlternateLanguagePaths("/blog"),
+    },
+  };
+}
+
+export default function BlogPage() {
+  return <LaunchOsBlogArticle locale={defaultLocale} />;
 }

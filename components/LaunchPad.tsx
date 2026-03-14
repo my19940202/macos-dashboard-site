@@ -1,8 +1,15 @@
 "use client";
 
+import Link from "next/link";
 import React, { useCallback, useMemo, useRef, useState } from "react";
+import { MdLanguage } from "react-icons/md";
+import { SiBloglovin } from "react-icons/si";
 import type { AppItem } from "@/lib/apps";
-import type { LaunchPadMessages } from "@/lib/i18n";
+import {
+  getLocalizedPath,
+  type LaunchPadMessages,
+  type Locale,
+} from "@/lib/i18n";
 
 const PAGE_ROWS = 5;
 const PAGE_COLS = 7;
@@ -11,16 +18,22 @@ const PAGE_SIZE = PAGE_ROWS * PAGE_COLS;
 type LaunchPadProps = {
   apps: AppItem[];
   messages: LaunchPadMessages;
+  locale: Locale;
 };
 
 function formatPageLabel(template: string, page: number) {
   return template.replace("{page}", String(page));
 }
 
-export default function LaunchPad({ apps, messages }: LaunchPadProps) {
+export default function LaunchPad({
+  apps,
+  messages,
+  locale,
+}: LaunchPadProps) {
   const [query, setQuery] = useState("");
   const [page, setPage] = useState(0);
   const [slideDirection, setSlideDirection] = useState<"left" | "right">("left");
+  const [isLanguageMenuOpen, setIsLanguageMenuOpen] = useState(false);
   const touchStartXRef = useRef<number | null>(null);
   const mouseStartXRef = useRef<number | null>(null);
 
@@ -53,6 +66,15 @@ export default function LaunchPad({ apps, messages }: LaunchPadProps) {
     setQuery(value);
     setPage(0);
   }, []);
+
+  const languageOptions = useMemo(
+    () => [
+      { code: "zh" as const, label: "Chinese" },
+      { code: "en" as const, label: "English" },
+      { code: "ja" as const, label: "Japanese" },
+    ],
+    [],
+  );
 
   const changePage = useCallback(
     (nextPage: number) => {
@@ -113,16 +135,16 @@ export default function LaunchPad({ apps, messages }: LaunchPadProps) {
       return;
     }
 
-    window.location.href = scheme;
+    window.location.assign(scheme);
   };
 
   return (
     <div className="relative flex min-h-screen flex-col overflow-hidden bg-[radial-gradient(circle_at_top,_#3d2fe5_0%,_#2134d7_38%,_#233db3_62%,_#3158a6_100%)] text-white">
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.14),_transparent_28%)]" />
 
-      <header className="fixed left-0 right-0 top-0 z-20 px-4 pt-5 sm:px-6">
-        <div className="mx-auto flex w-full justify-center">
-          <label className="flex h-11 w-full max-w-md items-center gap-3 rounded-full border border-white/10 bg-[#3c35b8]/75 px-4 text-white/70 shadow-[0_12px_30px_rgba(12,10,62,0.28)] ring-1 ring-white/8 backdrop-blur-xl">
+      <header className="w-full z-40 max-w-[1400px] px-4 pt-5 sm:px-6 mx-auto relative">
+        <div className="grid w-full items-center gap-4">
+          <label className="flex h-11 mx-auto max-w-md items-center gap-3 rounded-full border border-white/10 bg-[#3c35b8]/75 px-4 text-white/70 shadow-[0_12px_30px_rgba(12,10,62,0.28)] ring-1 ring-white/8 backdrop-blur-xl">
             <svg
               aria-hidden="true"
               viewBox="0 0 24 24"
@@ -137,16 +159,68 @@ export default function LaunchPad({ apps, messages }: LaunchPadProps) {
             <input
               type="text"
               aria-label={messages.searchAriaLabel}
-              className="h-full flex-1 border-0 bg-transparent text-sm text-white placeholder:text-white/55 focus:outline-none"
+              className="h-full w-60 flex-1 border-0 bg-transparent text-sm text-white placeholder:text-white/55 focus:outline-none"
               placeholder={messages.searchPlaceholder}
               value={query}
               onChange={(e) => handleChangeQuery(e.target.value)}
             />
           </label>
         </div>
+        <div className="flex justify-center md:justify-end absolute right-0 bottom-0">
+          <ul className="menu menu-horizontal gap-1 rounded-full border border-white/10 bg-[#3c35b8]/75 p-1 text-white shadow-[0_12px_30px_rgba(12,10,62,0.28)] ring-1 ring-white/8 backdrop-blur-xl">
+            <li className="relative cursor-pointer">
+              <button
+                type="button"
+                aria-label="Switch language"
+                aria-expanded={isLanguageMenuOpen}
+                onClick={() => setIsLanguageMenuOpen((open) => !open)}
+                onBlur={(e) => {
+                  if (!e.currentTarget.parentElement?.contains(e.relatedTarget)) {
+                    setIsLanguageMenuOpen(false);
+                  }
+                }}
+                className="flex h-9 w-9 items-center justify-center rounded-full bg-transparent text-white/85 transition hover:bg-white/10 hover:text-white"
+              >
+                <MdLanguage className="h-5 w-5" />
+              </button>
+
+              {isLanguageMenuOpen && (
+                <ul className="absolute z-40 right-0 top-[calc(100%+0.5rem)] w-40 rounded-2xl border border-white/10 bg-[#3c35b8]/85 p-2 text-sm text-white shadow-[0_16px_40px_rgba(12,10,62,0.36)] ring-1 ring-white/8 backdrop-blur-2xl">
+                  {languageOptions.map((option) => {
+                    const isActive = option.code === locale;
+
+                    return (
+                      <li key={option.code}>
+                        <Link
+                          href={getLocalizedPath(option.code, "/")}
+                          className={`flex cursor-pointer rounded-xl px-3 py-2 transition hover:bg-white/10 ${
+                            isActive ? "bg-white/10 text-white" : "text-white/85"
+                          }`}
+                          onClick={() => setIsLanguageMenuOpen(false)}
+                        >
+                          {option.label}
+                        </Link>
+                      </li>
+                    );
+                  })}
+                </ul>
+              )}
+            </li>
+
+            <li>
+              <Link
+                href={getLocalizedPath(locale, "/blog")}
+                aria-label="Open blog"
+                className="flex h-9 w-9 items-center justify-center rounded-full bg-transparent text-white/85 transition hover:bg-white/10 hover:text-white"
+              >
+                <SiBloglovin className="h-[18px] w-[18px]" />
+              </Link>
+            </li>
+          </ul>
+        </div>
       </header>
 
-      <div className="relative z-10 flex flex-1 pt-24">
+      <div className="relative z-10 flex flex-1 pt-12">
         <div
           className="launchpad-swipe-surface flex w-full flex-1 items-start justify-center px-5 pb-14 sm:px-8 sm:pb-16"
           onTouchStart={handleTouchStart}
