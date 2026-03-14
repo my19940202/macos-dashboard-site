@@ -8,7 +8,7 @@ type HomePageProps = {
 };
 
 export default function HomePage({ locale }: HomePageProps) {
-  const apps = getApps();
+  const apps = getApps(locale);
   const messages = getMessages(locale);
 
   return (
