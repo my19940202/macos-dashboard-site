@@ -2,12 +2,9 @@ import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
+import HtmlLang from "@/components/HtmlLang";
 import ThemeScript from "@/components/ThemeScript";
-
-const siteUrl =
-  process.env.SITE_URL ||
-  process.env.NEXT_PUBLIC_SITE_URL ||
-  "https://maclaunchpad.aizeten.me";
+import { siteUrl } from "@/lib/i18n";
 const googleAnalyticsId =
   process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID || "G-TNTLX5MNYL";
 
@@ -22,16 +19,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Mac 应用启动台",
-  description: "在 Web 中以 macOS 风格展示并启动你的常用应用。",
   metadataBase: new URL(siteUrl),
-  applicationName: "Mac 应用启动台",
   manifest: "/manifest.webmanifest",
-  appleWebApp: {
-    capable: true,
-    statusBarStyle: "default",
-    title: "Mac 应用启动台",
-  },
   formatDetection: {
     telephone: false,
   },
@@ -61,6 +50,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-base-300 text-base-content`}
       >
+        <HtmlLang />
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`}
           strategy="afterInteractive"

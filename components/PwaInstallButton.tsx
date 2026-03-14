@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import type { PwaInstallMessages } from "@/lib/i18n";
 
 type BeforeInstallPromptEvent = Event & {
   prompt: () => Promise<void>;
@@ -16,7 +17,13 @@ function isStandaloneMode() {
   return isDisplayModeStandalone || navigatorWithStandalone.standalone === true;
 }
 
-export default function PwaInstallButton() {
+type PwaInstallButtonProps = {
+  messages: PwaInstallMessages;
+};
+
+export default function PwaInstallButton({
+  messages,
+}: PwaInstallButtonProps) {
   const [deferredPrompt, setDeferredPrompt] = useState<BeforeInstallPromptEvent | null>(null);
   const [isInstalled, setIsInstalled] = useState(() =>
     typeof window === "undefined" ? false : isStandaloneMode(),
@@ -63,13 +70,13 @@ export default function PwaInstallButton() {
 
   const buttonLabel = useMemo(() => {
     if (isInstalling) {
-      return "安装中...";
+      return messages.installing;
     }
     if (isInstalled) {
-      return "已安装";
+      return messages.installed;
     }
-    return "安装到本地";
-  }, [isInstalled, isInstalling]);
+    return messages.install;
+  }, [isInstalled, isInstalling, messages]);
 
   async function handleInstall() {
     if (!deferredPrompt || isInstalling) {

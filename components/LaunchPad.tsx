@@ -1,7 +1,8 @@
 "use client";
 
 import React, { useCallback, useMemo, useRef, useState } from "react";
-import type { AppItem } from "@/app/page";
+import type { AppItem } from "@/lib/apps";
+import type { LaunchPadMessages } from "@/lib/i18n";
 
 const PAGE_ROWS = 5;
 const PAGE_COLS = 7;
@@ -9,9 +10,14 @@ const PAGE_SIZE = PAGE_ROWS * PAGE_COLS;
 
 type LaunchPadProps = {
   apps: AppItem[];
+  messages: LaunchPadMessages;
 };
 
-export default function LaunchPad({ apps }: LaunchPadProps) {
+function formatPageLabel(template: string, page: number) {
+  return template.replace("{page}", String(page));
+}
+
+export default function LaunchPad({ apps, messages }: LaunchPadProps) {
   const [query, setQuery] = useState("");
   const [page, setPage] = useState(0);
   const [slideDirection, setSlideDirection] = useState<"left" | "right">("left");
@@ -103,11 +109,10 @@ export default function LaunchPad({ apps }: LaunchPadProps) {
   const handleClickApp = (app: AppItem) => {
     const scheme = app.deeplinks[0];
     if (!scheme) {
-      window.alert("该应用暂不支持直接打开");
+      window.alert(messages.unsupportedAppMessage);
       return;
     }
 
-    // 参考 README 中的 deeplink 打开方式
     window.location.href = scheme;
   };
 
@@ -131,9 +136,9 @@ export default function LaunchPad({ apps }: LaunchPadProps) {
             </svg>
             <input
               type="text"
-              aria-label="搜索应用"
+              aria-label={messages.searchAriaLabel}
               className="h-full flex-1 border-0 bg-transparent text-sm text-white placeholder:text-white/55 focus:outline-none"
-              placeholder="Search Applications"
+              placeholder={messages.searchPlaceholder}
               value={query}
               onChange={(e) => handleChangeQuery(e.target.value)}
             />
@@ -193,7 +198,10 @@ export default function LaunchPad({ apps }: LaunchPadProps) {
                       index === currentPage ? "bg-white" : "bg-white/35"
                     }`}
                     onClick={() => changePage(index)}
-                    aria-label={`第 ${index + 1} 页`}
+                    aria-label={formatPageLabel(
+                      messages.pageIndicatorLabelTemplate,
+                      index + 1,
+                    )}
                   />
                 ))}
               </div>

@@ -2,7 +2,27 @@
 const siteUrl =
   process.env.SITE_URL ||
   process.env.NEXT_PUBLIC_SITE_URL ||
-  "http://localhost:3000";
+  "https://maclaunchpad.aizeten.me";
+
+const localizedHomePaths = new Set(["/", "/en", "/ja"]);
+const homeAlternateRefs = [
+  {
+    href: `${siteUrl}/`,
+    hreflang: "zh-CN",
+  },
+  {
+    href: `${siteUrl}/en`,
+    hreflang: "en",
+  },
+  {
+    href: `${siteUrl}/ja`,
+    hreflang: "ja",
+  },
+  {
+    href: `${siteUrl}/`,
+    hreflang: "x-default",
+  },
+];
 
 module.exports = {
   siteUrl,
@@ -25,7 +45,9 @@ module.exports = {
       changefreq: isHomePage ? "daily" : "weekly",
       priority: isHomePage ? 1.0 : 0.7,
       lastmod: config.autoLastmod ? new Date().toISOString() : undefined,
-      alternateRefs: config.alternateRefs ?? [],
+      alternateRefs: localizedHomePaths.has(path)
+        ? homeAlternateRefs
+        : config.alternateRefs ?? [],
     };
   },
 };

@@ -1,43 +1,9 @@
-import LaunchPad from "../components/LaunchPad";
-import appsData from "../data/apps.json";
-import PwaInstallButton from "@/components/PwaInstallButton";
+import type { Metadata } from "next";
+import HomePage from "@/components/HomePage";
+import { defaultLocale, getHomeMetadata } from "@/lib/i18n";
 
-export type AppItem = {
-  name: string;
-  iconUrl: string;
-  deeplinks: string[];
-};
-
-type AppJsonItem = {
-  name: string;
-  iconFile: string;
-  deeplinks: string[];
-  is_system_default: boolean;
-};
-
-function getApps(): AppItem[] {
-  const items = appsData as AppJsonItem[];
-  return items
-    .filter(item => Boolean(item.deeplinks && item.deeplinks.length))
-    .sort((a, b) => {
-      // is_system_default 为 true 的排前面
-      if (a.is_system_default === b.is_system_default) return 0;
-      return a.is_system_default ? -1 : 1;
-    })
-    .map((item) => ({
-      name: item.name,
-      deeplinks: item.deeplinks,
-      iconUrl: `https://eztwwgfhrwnlyfhzqyxe.supabase.co/storage/v1/object/public/mac-dashboard/images/${item.iconFile}`,
-    }));
-}
+export const generateMetadata = (): Metadata => getHomeMetadata(defaultLocale);
 
 export default function Home() {
-  const apps = getApps();
-
-  return (
-    <main className="min-h-screen bg-base-200">
-      <PwaInstallButton />
-      <LaunchPad apps={apps} />
-    </main>
-  );
+  return <HomePage locale={defaultLocale} />;
 }
