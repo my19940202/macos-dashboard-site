@@ -802,9 +802,45 @@
     "is_system_default": false
   },
   {
-    "name": "Google Chrome",
-    "iconFile": "com.google.Chrome.png",
-    "deeplinks": [],
+    "name": "Figma",
+    "iconFile": "figma-icon.png",
+    "deeplinks": [
+      "figma://"
+    ],
+    "is_system_default": false
+  },
+  {
+    "name": "Slack",
+    "iconFile": "slack-icon.png",
+    "deeplinks": [
+      "slack://",
+      "slack://open"
+    ],
+    "is_system_default": false
+  },
+  {
+    "name": "Zoom",
+    "iconFile": "zoom-icon.webp",
+    "deeplinks": [
+      "zoomus://",
+      "zoommtg://"
+    ],
+    "is_system_default": false
+  },
+  {
+    "name": "Spotify",
+    "iconFile": "spotify-icon.png",
+    "deeplinks": [
+      "spotify://"
+    ],
+    "is_system_default": false
+  },
+  {
+    "name": "1Password",
+    "iconFile": "1Password-icon.png",
+    "deeplinks": [
+      "onepassword://"
+    ],
     "is_system_default": false
   },
   {
@@ -878,6 +914,22 @@
       "open-excel://",
       "ms-excel://",
       "excel://"
+    ],
+    "is_system_default": false
+  },
+  {
+    "name": "Microsoft Word",
+    "iconFile": "word-icon.webp",
+    "deeplinks": [
+      "ms-word:"
+    ],
+    "is_system_default": false
+  },
+  {
+    "name": "Microsoft PowerPoint",
+    "iconFile": "powerpoint-icon.webp",
+    "deeplinks": [
+      "ms-powerpoint:"
     ],
     "is_system_default": false
   },

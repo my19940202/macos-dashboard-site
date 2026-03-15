@@ -3,7 +3,6 @@ import { Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import HtmlLang from "@/components/HtmlLang";
-import ThemeScript from "@/components/ThemeScript";
 import { siteUrl } from "@/lib/i18n";
 const googleAnalyticsId =
   process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID || "G-TNTLX5MNYL";
@@ -63,7 +62,6 @@ export default function RootLayout({
             gtag('config', '${googleAnalyticsId}');
           `}
         </Script>
-        <ThemeScript />
         {children}
       </body>
     </html>

@@ -226,6 +226,140 @@ const blogCopy: Record<Locale, BlogCopy> = {
     ctaLabel: "maclaunchpad を開く",
     backLabel: "ホームへ戻る",
   },
+  es: {
+    eyebrow: "Gratis en la web, familiar en tu Mac",
+    title: "El Launchpad que conoces, refinado para macOS 26 Tahoe",
+    subtitle: "maclaunchpad es una alternativa gratuita al Launchpad para macOS 26.",
+    lead:
+      "Spotlight es genial, pero muchos seguimos necesitando el Launchpad. No solo un cuadro de búsqueda: una forma más visual, ordenada y familiar de abrir las apps que dan forma a nuestro trabajo y vida. Por eso creamos maclaunchpad.",
+    metadataTitle: "Blog maclaunchpad | Alternativa gratuita al Launchpad para macOS",
+    metadataDescription:
+      "Descubre cómo maclaunchpad recupera la experiencia del Launchpad en una app web gratuita, respetando los hábitos de los usuarios de Mac.",
+    highlights: [
+      {
+        title: "Gratis",
+        description: "Úsalo directamente en el navegador, sin pagar ni instalar nada extra.",
+      },
+      {
+        title: "Cómodo",
+        description: "Ábrelo al instante, fíjalo, instálalo como PWA; muy poco esfuerzo.",
+      },
+      {
+        title: "Familiar",
+        description: "Recupera la experiencia visual y de un clic que esperas del Launchpad.",
+      },
+      {
+        title: "Respetuoso",
+        description: "No impone un nuevo flujo; respeta los hábitos que ya tienes en el Mac.",
+      },
+    ],
+    sections: [
+      {
+        heading: "Spotlight es potente, pero no sustituye todos los hábitos",
+        paragraphs: [
+          "Spotlight es una de las mejores herramientas del Mac y lo usamos a diario. Pero la búsqueda no es siempre la entrada más natural. Mucha gente navega por icono, posición y memoria visual antes que por palabras clave.",
+          "Para esos usuarios, el Launchpad es más que una lista: es un orden personal. Apps de trabajo en una página, herramientas creativas en otra, utilidades donde la memoria muscular las espera. Ese orden forma parte de la experiencia.",
+        ],
+      },
+      {
+        heading: "Por qué una versión web tiene sentido",
+        paragraphs: [
+          "Queríamos que maclaunchpad fuera ligero, rápido y fácil de usar. Por eso elegimos la web: gratis, accesible al momento y sin pedir que aprendas otro sustituto de escritorio.",
+          "La versión web también es más cómoda: ábrela desde cualquier navegador, en una pestaña fija o como PWA. Reduce la fricción y mantiene una experiencia muy cercana al Launchpad.",
+        ],
+      },
+      {
+        heading: "Restauramos más que un diseño",
+        paragraphs: [
+          "maclaunchpad no es solo otra rejilla de iconos. Queremos devolver un modelo de interacción familiar: jerarquía visual, forma de explorar y flujo de apertura intuitivos si ya conoces el Launchpad.",
+          "Esa continuidad importa. Lo que define un buen reemplazo no son las funciones extra, sino si la gente puede seguir su día sin tener que reaprender todo.",
+        ],
+      },
+      {
+        heading: "Respetar los hábitos del usuario importa",
+        paragraphs: [
+          "Un error común es asumir que el usuario debe adaptarse a la nueva herramienta. Creemos que es mejor entender primero los hábitos existentes y construir en torno a ellos.",
+          "A unos les gusta la búsqueda por teclado; otros piensan de forma espacial y visual. Unos recuerdan nombres de apps, otros dónde está el icono. maclaunchpad no compite con Spotlight: reconoce que el Launchpad sigue importando y ofrece una opción gratuita y cómoda para quien lo quiera.",
+        ],
+      },
+      {
+        heading: "Hecho para nosotros y para gente como nosotros",
+        paragraphs: [
+          "Creamos maclaunchpad porque lo queríamos para nosotros. Spotlight es excelente, pero seguimos necesitando el orden y la comodidad del Launchpad. Cuando una necesidad es real, merece una respuesta de producto.",
+          "No es solo un experimento nostálgico: es una herramienta práctica para el día a día en macOS 26 Tahoe. Si buscas una alternativa al Launchpad más libre, simple y familiar, maclaunchpad está hecha también para ti.",
+        ],
+      },
+    ],
+    ctaLabel: "Abrir maclaunchpad",
+    backLabel: "Volver al inicio",
+  },
+  fr: {
+    eyebrow: "Gratuit sur le web, familier sur votre Mac",
+    title: "Le Launchpad que vous connaissez, affiné pour macOS 26 Tahoe",
+    subtitle: "maclaunchpad est une alternative gratuite au Launchpad pour macOS 26.",
+    lead:
+      "Spotlight est excellent, mais beaucoup ont encore besoin du Launchpad. Pas seulement une barre de recherche : une façon plus visuelle, plus ordonnée et plus familière d’ouvrir les apps qui structurent notre travail et notre vie. C’est pour cela que nous avons créé maclaunchpad.",
+    metadataTitle: "Blog maclaunchpad | Alternative gratuite au Launchpad pour macOS",
+    metadataDescription:
+      "Découvrez comment maclaunchpad retrouve l’expérience du Launchpad dans une app web gratuite, en respectant les habitudes des utilisateurs Mac.",
+    highlights: [
+      {
+        title: "Gratuit",
+        description: "Utilisez-le directement dans le navigateur, sans achat ni installation compliquée.",
+      },
+      {
+        title: "Pratique",
+        description: "Ouvrez-le en un clic, épinglez l’onglet ou installez en PWA, avec très peu de friction.",
+      },
+      {
+        title: "Familier",
+        description: "Il retrouve l’expérience visuelle et le clic pour lancer qu’on attend du Launchpad.",
+      },
+      {
+        title: "Respectueux",
+        description: "Il n’impose pas un nouveau flux ; il respecte les habitudes déjà prises sur le Mac.",
+      },
+    ],
+    sections: [
+      {
+        heading: "Spotlight est puissant, mais ne remplace pas toutes les habitudes",
+        paragraphs: [
+          "Spotlight est l’un des meilleurs outils du Mac, et nous l’utilisons tous les jours. Mais la recherche n’est pas toujours l’entrée la plus naturelle. Beaucoup naviguent par icône, position et mémoire visuelle avant de penser en mots-clés.",
+          "Pour eux, le Launchpad est plus qu’une liste d’apps : c’est un ordre personnel. Apps de travail sur une page, outils créatifs sur une autre, utilitaires là où la mémoire musculaire les attend. Cet ordre fait partie de l’expérience.",
+        ],
+      },
+      {
+        heading: "Pourquoi une version web a du sens",
+        paragraphs: [
+          "Nous voulions que maclaunchpad soit léger, rapide et facile à prendre en main. D’où le choix du web : gratuit, accessible tout de suite, sans apprendre un autre logiciel de bureau.",
+          "La version web est aussi plus pratique : ouvrez-la depuis n’importe quel navigateur, gardez-la en onglet fixe ou installez-la en PWA. Elle réduit la barrière tout en gardant une expérience proche du Launchpad.",
+        ],
+      },
+      {
+        heading: "Nous restaurons plus qu’une mise en page",
+        paragraphs: [
+          "maclaunchpad ne vise pas à faire une grille d’icônes de plus. Nous voulons ramener un modèle d’interaction familier : hiérarchie visuelle, façon de parcourir et flux de lancement intuitifs si vous connaissez déjà le Launchpad.",
+          "Cette continuité compte. La valeur d’un remplaçant ne se mesure pas aux fonctionnalités ajoutées, mais au fait que les gens puissent continuer leur journée sans tout réapprendre.",
+        ],
+      },
+      {
+        heading: "Respecter les habitudes des utilisateurs compte",
+        paragraphs: [
+          "Une erreur courante est de supposer que l’utilisateur doit s’adapter au nouvel outil. Nous pensons qu’il vaut mieux d’abord comprendre les habitudes existantes, puis construire autour.",
+          "Certains préfèrent la recherche au clavier ; d’autres pensent en spatial et en visuel. Certains retiennent les noms d’apps, d’autres l’emplacement des icônes. maclaunchpad ne s’oppose pas à Spotlight : il reconnaît que le Launchpad compte encore et propose une option gratuite et pratique pour ceux qui le veulent.",
+        ],
+      },
+      {
+        heading: "Fait pour nous, et pour ceux qui nous ressemblent",
+        paragraphs: [
+          "Nous avons créé maclaunchpad parce que nous en avions besoin. Spotlight est excellent, mais nous comptons encore sur l’ordre et le confort du Launchpad. Quand un besoin est réel, il mérite une réponse produit.",
+          "Ce n’est pas qu’une expérience nostalgique : c’est un outil pratique pour un usage quotidien sur macOS 26 Tahoe. Si vous cherchez une alternative au Launchpad plus libre, simple et familière, maclaunchpad est fait pour vous aussi.",
+        ],
+      },
+    ],
+    ctaLabel: "Ouvrir maclaunchpad",
+    backLabel: "Retour à l’accueil",
+  },
 };
 
 export function getLaunchOsBlogCopy(locale: Locale): BlogCopy {

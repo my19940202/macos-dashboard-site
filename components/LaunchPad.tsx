@@ -3,10 +3,11 @@
 import Link from "next/link";
 import React, { useCallback, useMemo, useRef, useState } from "react";
 import { MdLanguage } from "react-icons/md";
-import { SiBloglovin } from "react-icons/si";
 import type { AppItem } from "@/lib/apps";
 import {
   getLocalizedPath,
+  localeDisplayNames,
+  locales,
   type LaunchPadMessages,
   type Locale,
 } from "@/lib/i18n";
@@ -68,11 +69,11 @@ export default function LaunchPad({
   }, []);
 
   const languageOptions = useMemo(
-    () => [
-      { code: "zh" as const, label: "Chinese" },
-      { code: "en" as const, label: "English" },
-      { code: "ja" as const, label: "Japanese" },
-    ],
+    () =>
+      locales.map((code) => ({
+        code,
+        label: localeDisplayNames[code],
+      })),
     [],
   );
 
@@ -179,7 +180,7 @@ export default function LaunchPad({
                     setIsLanguageMenuOpen(false);
                   }
                 }}
-                className="flex h-9 w-9 items-center justify-center rounded-full bg-transparent text-white/85 transition hover:bg-white/10 hover:text-white"
+                className="flex items-center justify-center rounded-full bg-transparent text-white/85 transition hover:bg-white/10 hover:text-white"
               >
                 <MdLanguage className="h-5 w-5" />
               </button>
@@ -213,7 +214,7 @@ export default function LaunchPad({
                 aria-label="Open blog"
                 className="flex h-9 w-9 items-center justify-center rounded-full bg-transparent text-white/85 transition hover:bg-white/10 hover:text-white"
               >
-                <SiBloglovin className="h-[18px] w-[18px]" />
+                Blog
               </Link>
             </li>
           </ul>

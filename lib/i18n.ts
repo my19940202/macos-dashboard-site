@@ -6,11 +6,19 @@ export const siteUrl =
   "https://maclaunchpad.aizeten.me";
 
 export const defaultLocale = "zh";
-export const secondaryLocales = ["en", "ja"] as const;
+export const secondaryLocales = ["en", "ja", "es", "fr"] as const;
 export const locales = [defaultLocale, ...secondaryLocales] as const;
 
 export type Locale = (typeof locales)[number];
 export type SecondaryLocale = (typeof secondaryLocales)[number];
+
+export const localeDisplayNames: Record<Locale, string> = {
+  zh: "中文",
+  en: "English",
+  ja: "日本語",
+  es: "Español",
+  fr: "Français",
+};
 
 export type LaunchPadMessages = {
   searchAriaLabel: string;
@@ -90,6 +98,42 @@ const dictionaries: Record<Locale, LocaleMessages> = {
       install: "アプリをインストール",
     },
   },
+  es: {
+    metadata: {
+      title: "Lanzador de apps Mac",
+      description: "Lanza tus aplicaciones macOS favoritas desde un panel web.",
+      applicationName: "Lanzador de apps Mac",
+    },
+    launchPad: {
+      searchAriaLabel: "Buscar aplicaciones",
+      searchPlaceholder: "Buscar aplicaciones",
+      unsupportedAppMessage: "Esta aplicación aún no admite apertura directa.",
+      pageIndicatorLabelTemplate: "Página {page}",
+    },
+    pwaInstall: {
+      installing: "Instalando...",
+      installed: "Instalado",
+      install: "Instalar aplicación",
+    },
+  },
+  fr: {
+    metadata: {
+      title: "Launchpad Mac",
+      description: "Lancez vos applications macOS depuis un tableau de bord web.",
+      applicationName: "Launchpad Mac",
+    },
+    launchPad: {
+      searchAriaLabel: "Rechercher des applications",
+      searchPlaceholder: "Rechercher des applications",
+      unsupportedAppMessage: "Cette application ne prend pas encore en charge le lancement direct.",
+      pageIndicatorLabelTemplate: "Page {page}",
+    },
+    pwaInstall: {
+      installing: "Installation...",
+      installed: "Installé",
+      install: "Installer l’app",
+    },
+  },
 };
 
 export function isLocale(value: string): value is Locale {
@@ -110,6 +154,10 @@ export function getHtmlLang(locale: Locale): string {
       return "en";
     case "ja":
       return "ja";
+    case "es":
+      return "es";
+    case "fr":
+      return "fr";
     default:
       return "zh-CN";
   }
@@ -131,6 +179,8 @@ export function getAlternateLanguagePaths(pathname = "/"): Record<string, string
     "zh-CN": getLocalizedPath("zh", pathname),
     en: getLocalizedPath("en", pathname),
     ja: getLocalizedPath("ja", pathname),
+    es: getLocalizedPath("es", pathname),
+    fr: getLocalizedPath("fr", pathname),
     "x-default": getLocalizedPath("zh", pathname),
   };
 }
